@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Covid-19 Tracker</string>
+    <string name="history_string"><u>Click on Total Cases to view History</u></string>
+    <string name="about_app"><u>About this App</u></string>
+</resources>

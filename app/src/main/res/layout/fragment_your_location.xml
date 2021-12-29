@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/corona_icon_png"/>
+
+        <TextView
+
+            android:id="@+id/stateNameAppend"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:text="CORONA in "
+            android:gravity="center"
+
+            android:fontFamily="@font/fredokaoneregular"
+            android:textSize="27sp"
+            android:layout_marginStart="16dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/totalCasesCardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Total : "
+                    android:fontFamily="@font/fredokaoneregular"
+                    android:textSize="25sp"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/totalCasesText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/fredokaoneregular"
+                    android:gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="@color/yellow"
+                    android:textSize="25sp" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/deathsCardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Recovered : "
+                    android:fontFamily="@font/fredokaoneregular"
+                    android:textSize="25sp"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/recoveredCasesText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/fredokaoneregular"
+                    android:gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="@color/green"
+                    android:textSize="25sp" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/recoveredCasesCardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/fredokaoneregular"
+                    android:gravity="center_vertical"
+                    android:text="Deaths : "
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/deathCasesText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/fredokaoneregular"
+                    android:gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="@color/red"
+                    android:textSize="25sp" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

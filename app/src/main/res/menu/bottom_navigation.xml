@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_india"
+        android:icon="@drawable/world_image"
+        android:title="India"/>
+
+    <item
+        android:id="@+id/nav_world"
+        android:icon="@drawable/world_image"
+        android:title="World"/>
+
+    <item
+        android:id="@+id/nav_your_location"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        android:title="Your Location"/>
+
+</menu>

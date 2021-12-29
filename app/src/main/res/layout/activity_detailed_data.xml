@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedData">
+
+    <TextView
+        android:id="@+id/historyCoronaText"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/fredokaoneregular"
+        android:gravity="center"
+        android:text="History"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@+id/historyCoronaText"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/corona_icon_png"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toLeftOf="@+id/historyCoronaText"
+        android:src="@drawable/corona_icon_png"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/historyCoronaText"
+        android:layout_margin="6dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lineChart"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
