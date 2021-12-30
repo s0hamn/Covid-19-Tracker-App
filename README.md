@@ -1,7 +1,7 @@
 # Covid-19 Tracker
 
 ## Description
-Covid-19 Tracker is an app which uses the data available online regarding the Covid Statistics and displays it in a nice UI Interface.
+Covid-19 Tracker is an app that uses the data available online regarding the Covid Statistics and displays it in a nice UI Interface.
 - This app uses the [disease.sh](https://corona.lmao.ninja/) API to extract JSON and parse it with Volley Library in Android Studio.
 
 
